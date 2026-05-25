@@ -1,26 +1,56 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Nav } from "@/components/site/Nav";
+import { Hero } from "@/components/site/Hero";
+import { Problem } from "@/components/site/Problem";
+import { Workflow } from "@/components/site/Workflow";
+import { HowItWorks } from "@/components/site/HowItWorks";
+import { Architecture } from "@/components/site/Architecture";
+import { Capabilities } from "@/components/site/Capabilities";
+import { Responsibility } from "@/components/site/Responsibility";
+import { UseCases } from "@/components/site/UseCases";
+import { Impact } from "@/components/site/Impact";
+import { Gallery } from "@/components/site/Gallery";
+import { Stack } from "@/components/site/Stack";
+import { Footer } from "@/components/site/Footer";
+import { useReveal } from "@/hooks/use-reveal";
 
 export const Route = createFileRoute("/")({
   component: Index,
+  head: () => ({
+    meta: [
+      { title: "SalesIntel — AI-Augmented Revenue Workflow Platform" },
+      {
+        name: "description",
+        content:
+          "SalesIntel augments every stage of the revenue pipeline with grounded intelligence, deterministic workflows, and human-approved AI actions.",
+      },
+      { property: "og:title", content: "SalesIntel — AI That Sells With You" },
+      {
+        property: "og:description",
+        content:
+          "Human-controlled AI workflows with deterministic decision systems for enterprise sales teams.",
+      },
+    ],
+  }),
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  useReveal();
+  return (
+    <main className="relative bg-[#0A0A0B] text-white overflow-x-hidden">
+      <Nav />
+      <Hero />
+      <Problem />
+      <Workflow />
+      <HowItWorks />
+      <Architecture />
+      <Capabilities />
+      <Responsibility />
+      <UseCases />
+      <Impact />
+      <Gallery />
+      <Stack />
+      <Footer />
+    </main>
+  );
 }
