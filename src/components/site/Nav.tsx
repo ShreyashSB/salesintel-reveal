@@ -13,12 +13,10 @@ export function Nav() {
             <a href="#capabilities" className="hover:text-white transition">Capabilities</a>
             <a href="#impact" className="hover:text-white transition">Impact</a>
           </nav>
-          <a
-            href="#demo"
-            className="text-sm font-medium px-4 py-2 rounded-lg gradient-primary hover:opacity-90 transition shadow-[0_0_30px_-5px_rgba(139,92,246,0.6)]"
-          >
-            Book a Demo
-          </a>
+          <span className="hidden md:inline-flex items-center gap-2 text-xs font-medium px-3 py-1.5 rounded-full glass text-[#A1A1AA]">
+            <span className="size-1.5 rounded-full bg-[#10B981] animate-pulse" />
+            POC Presentation
+          </span>
         </div>
       </div>
     </header>

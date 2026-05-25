@@ -45,10 +45,10 @@ export function Hero() {
             <span className="inline-block ml-2 transition-transform group-hover:translate-x-1">→</span>
           </a>
           <a
-            href="#demo"
+            href="#architecture"
             className="px-6 py-3.5 rounded-xl glass glass-hover font-medium"
           >
-            Book a Demo
+            Explore Architecture
           </a>
         </div>
 
