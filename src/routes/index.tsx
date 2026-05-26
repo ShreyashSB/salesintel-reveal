@@ -10,6 +10,7 @@ import { Responsibility } from "@/components/site/Responsibility";
 import { UseCases } from "@/components/site/UseCases";
 import { Impact } from "@/components/site/Impact";
 import { Gallery } from "@/components/site/Gallery";
+import { EnrichmentFlow } from "@/components/site/EnrichmentFlow";
 import { Stack } from "@/components/site/Stack";
 import { Footer } from "@/components/site/Footer";
 import { useReveal } from "@/hooks/use-reveal";
@@ -41,6 +42,7 @@ function Index() {
       <Nav />
       <Hero />
       <Problem />
+      <EnrichmentFlow />
       <Workflow />
       <HowItWorks />
       <Architecture />
