@@ -1,5 +1,6 @@
 import { Search, Layers, AlertTriangle } from "lucide-react";
 import { Section, Eyebrow } from "./Section";
+import crmExperience from "@/assets/current-crm-experience.png";
 
 const cards = [
   {
