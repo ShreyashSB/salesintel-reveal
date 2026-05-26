@@ -1,5 +1,6 @@
 import { Search, Layers, AlertTriangle } from "lucide-react";
 import { Section, Eyebrow } from "./Section";
+import crmExperience from "@/assets/current-crm-experience.png";
 
 const cards = [
   {
@@ -57,14 +58,13 @@ export function Problem() {
         <div className="reveal lg:sticky lg:top-32" style={{ transitionDelay: "150ms" }}>
           <div className="relative">
             <div className="absolute -inset-6 bg-[#8B5CF6]/20 blur-3xl rounded-full" />
-            <div className="relative aspect-video glass rounded-2xl flex items-center justify-center overflow-hidden">
-              <div className="absolute inset-0 grid-bg opacity-40" />
-              <div className="relative text-center">
-                <div className="size-14 mx-auto rounded-2xl glass flex items-center justify-center mb-4">
-                  <Layers className="size-6 text-[#A1A1AA]" />
-                </div>
-                <p className="text-[#A1A1AA] text-sm">Placeholder — Current CRM Experience</p>
-              </div>
+            <div className="relative glass rounded-2xl overflow-hidden p-2">
+              <img
+                src={crmExperience}
+                alt="Current CRM experience: disconnected spreadsheets, manual data entry, error-prone workflows"
+                className="w-full h-auto rounded-xl block"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
